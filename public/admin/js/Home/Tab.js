@@ -102,7 +102,6 @@ Ext.define('Admin.Home.Tab', {
         } else {
           grid.show();
           grid.store.loadData(connections.map(string => this.parseConnectionString(string)));
-          debugger;
           grid.store.data.items.forEach(row => {
             dispatch('database.info', row.data)
               .then(res => {

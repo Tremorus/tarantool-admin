@@ -3,6 +3,7 @@ Ext.define('Admin.Space.Collection', {
   extend: 'Ext.grid.Panel',
 
   title: 'Data',
+  forceFit : true,
 
   iconCls: 'fa fa-table',
 
